@@ -40,11 +40,26 @@ namespace GameOfLife
 
         public Action<int[,]> NextGenerationCompleted;
 
-        public int Cell(int x,int y)
-        {
-            var cellLocation = _world[x, y];
-            return _world[x, y] = cellLocation;
-        }
+        //public int Cell(int x,int y)
+        //{
+        //    var cellLocation = _world[x, y];
+        //    return _world[x, y] = cellLocation;
+        //}
+
+        
+
+    }
+
+    //building cell
+    public class Cell
+    {
+        
+        //holder for position of cell
+        public int [,] CellLocation;
+        //how many neighbors cell has
+        public int Neighbors;
+
+
 
         public bool IsAlive()
         {
