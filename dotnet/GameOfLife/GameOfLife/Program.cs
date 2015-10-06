@@ -16,9 +16,9 @@ namespace GameOfLife
 
     public class Life
     {
-        private bool[,] world;
-        private bool[,] nextGeneration;
-        private Task processTask;
+        private int[,] _world;
+        private int[,] _nextGeneration;
+        //private Task processTask;
 
         public int Size { get; set; }
         public int Generation { get; set; }
@@ -27,22 +27,23 @@ namespace GameOfLife
         {
             if(size < 1) throw new ArgumentException("Size must be 1 or larger");
             this.Size = size;
-            world = new bool[size, size];
-            nextGeneration = new bool[size, size];            
+            _world = new int[size, size];
+            _nextGeneration = new int[size, size];            
         }
 
-        public bool this[int x, int y]
+        public int this[int x, int y]
         {
-            get { return this.world[x, y]; }
-            set { this.world[x, y] = value; }
+            get { return this._world[x, y]; }
+            set { this._world[x, y] = value; }
         }
 
         public Action<bool[,]> NextGenerationCompleted;
 
-        public bool Cell(int x,int y)
+        public int Cell(int x,int y)
         {
-            bool currentValue = this.world[x, y];
-            return this.world[x, y] = !currentValue;
+            bool isAlive = true;
+            int cellLocation = this._world[x, y];
+            return this._world[x, y] = cellLocation;
         }
     }
 }
