@@ -1,8 +1,0 @@
-C:\Users\Cole\Documents\Visual Studio 2015\Projects\conways-game-of-life-colecathey\dotnet\GameOfLife\LifeTest\bin\Debug\LifeTest.dll
-C:\Users\Cole\Documents\Visual Studio 2015\Projects\conways-game-of-life-colecathey\dotnet\GameOfLife\LifeTest\bin\Debug\LifeTest.pdb
-C:\Users\Cole\Documents\Visual Studio 2015\Projects\conways-game-of-life-colecathey\dotnet\GameOfLife\LifeTest\bin\Debug\GameOfLife.exe
-C:\Users\Cole\Documents\Visual Studio 2015\Projects\conways-game-of-life-colecathey\dotnet\GameOfLife\LifeTest\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
-C:\Users\Cole\Documents\Visual Studio 2015\Projects\conways-game-of-life-colecathey\dotnet\GameOfLife\LifeTest\bin\Debug\GameOfLife.pdb
-C:\Users\Cole\Documents\Visual Studio 2015\Projects\conways-game-of-life-colecathey\dotnet\GameOfLife\LifeTest\obj\Debug\LifeTest.csprojResolveAssemblyReference.cache
-C:\Users\Cole\Documents\Visual Studio 2015\Projects\conways-game-of-life-colecathey\dotnet\GameOfLife\LifeTest\obj\Debug\LifeTest.dll
-C:\Users\Cole\Documents\Visual Studio 2015\Projects\conways-game-of-life-colecathey\dotnet\GameOfLife\LifeTest\obj\Debug\LifeTest.pdb

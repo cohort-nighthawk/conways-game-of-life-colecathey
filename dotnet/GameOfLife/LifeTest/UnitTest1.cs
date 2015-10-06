@@ -19,8 +19,8 @@ namespace LifeTest
         [TestMethod]
         public void CellIsAlive()
         {
-            var cell = new Life();
-            Assert.AreEqual(true, cell.IsAlive());
+            var cell = new Cell();
+            Assert.AreEqual(true, Cell.IsAlive());
         }
     }
 }

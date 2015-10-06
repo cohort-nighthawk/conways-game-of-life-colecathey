@@ -9,7 +9,7 @@ namespace GameOfLife
         }
     }
 
-    public class Life
+    public class World
     {
         private int[,] _world;
         private int[,] _nextGeneration;
@@ -63,8 +63,14 @@ namespace GameOfLife
 
         public bool IsAlive()
         {
-            
-            return true;
+            if (Neighbors < 2 || Neighbors > 4)
+            {
+                return false;
+            }
+            else
+            {
+                return true;
+            }
         }
 
     }
