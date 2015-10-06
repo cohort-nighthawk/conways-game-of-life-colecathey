@@ -15,5 +15,12 @@ namespace LifeTest
             Assert.AreEqual(2, life.Size);
 
         }
+
+        [TestMethod]
+        public void CellIsAlive()
+        {
+            var cell = new Life();
+            Assert.AreEqual(true, cell.IsAlive());
+        }
     }
 }
