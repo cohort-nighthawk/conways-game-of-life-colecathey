@@ -11,8 +11,8 @@ namespace LifeTest
         public void WorldSize()
         {
             var life = new Life();
-            life.Cell(2, 3);
-            Assert.AreEqual(WorldSize(3), true);
+            life.WorldSize(2);
+            Assert.AreEqual(2, life.Size);
 
         }
     }

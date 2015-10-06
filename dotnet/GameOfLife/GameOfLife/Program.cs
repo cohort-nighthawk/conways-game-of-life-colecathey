@@ -23,12 +23,20 @@ namespace GameOfLife
         public int Size { get; set; }
         public int Generation { get; set; }
 
-        public void WorldSize(int size)
+        public int WorldSize(int size)
         {
-            if(size < 1) throw new ArgumentException("Size must be 1 or larger");
-            this.Size = size;
-            _world = new int[size, size];
-            _nextGeneration = new int[size, size];            
+            if (size < 1)
+            {
+                throw new ArgumentException("Size must be 1 or larger");
+            }
+            else
+            {
+                this.Size = size;
+                _world = new int[size, size];
+                _nextGeneration = new int[size, size];
+                return Size;
+
+            }
         }
 
         public int this[int x, int y]
@@ -41,7 +49,7 @@ namespace GameOfLife
 
         public int Cell(int x,int y)
         {
-            bool isAlive = true;
+            //bool isAlive = true;
             int cellLocation = this._world[x, y];
             return this._world[x, y] = cellLocation;
         }
