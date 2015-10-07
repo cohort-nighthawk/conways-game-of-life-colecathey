@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Security.Cryptography.X509Certificates;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using GameOfLife;
 
@@ -10,9 +11,9 @@ namespace LifeTest
         [TestMethod]
         public void WorldSize()
         {
-            var life = new Life();
-            life.WorldSize(2);
-            Assert.AreEqual(2, life.Size);
+            var world = new World();
+            WorldSize();
+            Assert.AreEqual(2, World.WorldSize());
 
         }
 
