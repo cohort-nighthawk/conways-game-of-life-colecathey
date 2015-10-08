@@ -16,7 +16,7 @@ namespace GameOfLife
         
         //private Task processTask;
 
-        public int Size { get; set; }
+        public static int Size { get; set; }
         public int Generation { get; set; }
         
 
@@ -58,18 +58,23 @@ namespace GameOfLife
         public int [,] CellLocation;
         //how many neighbors cell has
         public int Neighbors;
+        public bool AliveCell = true;
 
 
 
-        public bool IsAlive()
+        public bool IsAlive(int Neighbors)
         {
+            
+            //var aliveCell = true;
             if (Neighbors < 2 || Neighbors > 4)
             {
-                return false;
+                AliveCell = false;
+                return AliveCell;
             }
             else
             {
-                return true;
+                AliveCell = true;
+                return AliveCell;
             }
         }
 

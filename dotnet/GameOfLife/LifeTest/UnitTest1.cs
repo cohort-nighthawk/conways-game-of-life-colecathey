@@ -9,11 +9,11 @@ namespace LifeTest
     public class UnitTest1
     {
         [TestMethod]
-        public void WorldSize()
+        public void TestWorldSize()
         {
             var world = new World();
-            WorldSize();
-            Assert.AreEqual(2, World.WorldSize());
+             world.WorldSize(2);
+            Assert.AreEqual(2, World.Size);
 
         }
 
@@ -21,7 +21,9 @@ namespace LifeTest
         public void CellIsAlive()
         {
             var cell = new Cell();
-            Assert.AreEqual(true, Cell.IsAlive());
+            cell.Neighbors = 3;
+            cell.IsAlive(cell.Neighbors);
+            Assert.AreNotSame(false, cell.AliveCell);
         }
     }
 }
