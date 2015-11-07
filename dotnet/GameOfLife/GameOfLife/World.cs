@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace GameOfLife
 {
-    class World
+    public class World
     {
         private int[,] _world;
         private int[,] _nextGeneration;

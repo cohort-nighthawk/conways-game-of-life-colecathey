@@ -12,13 +12,13 @@ namespace GameOfLife
         public int[,] CellLocation { get; set; }
         public int Neighbors { get; set; }
         public bool AliveCell { get; set; }
+        public bool GiveBirth { get; set; }
 
 
-
-        public bool IsAlive(int Neighbors)
-        {
-            //var aliveCell = true;
-            if (Neighbors < 2 || Neighbors > 4)
+        //check to see if cell should live to next generation
+        public bool IsAlive(int cell_neighbor)
+        {            
+            if (cell_neighbor < 2 || cell_neighbor > 4)
             {
                 AliveCell = false;
                 return AliveCell;
@@ -27,6 +27,21 @@ namespace GameOfLife
             {
                 AliveCell = true;
                 return AliveCell;
+            }
+        }
+
+        //check to see if cell should replicate next generation
+        public bool CellReplicate(int cell_neighbor)
+        {
+            if (cell_neighbor < 2 || cell_neighbor > 4)
+            {
+                GiveBirth = false;
+                return GiveBirth;
+            }
+            else
+            {
+                GiveBirth = true;
+                return GiveBirth;
             }
         }
     }

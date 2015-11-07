@@ -56,5 +56,53 @@ namespace LifeTest
             Assert.IsFalse(my_cell.IsAlive(cell_neighbor));
             /* end assert */
         }
+
+        [TestMethod]
+        public void CellAssureCellCanReplicate()
+        {
+            /* arrange */
+            Cell my_cell = new Cell();
+            int cell_neighbor = 3;
+            /* end arrange */
+
+            /* act */
+            /* end act */
+
+            /* assert */
+            Assert.IsTrue(my_cell.CellReplicate(cell_neighbor));
+            /* end assert */
+        }
+
+        [TestMethod]
+        public void CellAssureCellFailsToReplicateFromTooMany()
+        {
+            /* arrange */
+            Cell my_cell = new Cell();
+            int cell_neighbor = 5;
+            /* end arrange */
+
+            /* act */
+            /* end act */
+
+            /* assert */
+            Assert.IsFalse(my_cell.CellReplicate(cell_neighbor));
+            /* end assert */
+        }
+
+        [TestMethod]
+        public void CellAssureCellFailsToReplicateFromTooFew()
+        {
+            /* arrange */
+            Cell my_cell = new Cell();
+            int cell_neighbor = 1;
+            /* end arrange */
+
+            /* act */
+            /* end act */
+
+            /* assert */
+            Assert.IsFalse(my_cell.CellReplicate(cell_neighbor));
+            /* end assert */
+        }
     }
 }
