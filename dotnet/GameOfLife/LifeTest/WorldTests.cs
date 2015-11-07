@@ -15,10 +15,11 @@ namespace LifeTest
             /* end arrange */
 
             /* act */
+            var actual = test_world.BuildWorldSize();
             /* end act */
 
             /* assert */
-            
+            Assert.AreEqual(actual, 10);
             /* end assert */
         }
 
