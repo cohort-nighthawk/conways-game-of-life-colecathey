@@ -15,6 +15,7 @@ namespace GameOfLife
         public bool GiveBirth { get; set; }
 
 
+
         //check to see if cell should live to next generation
         public bool IsAlive(int cell_neighbor)
         {            

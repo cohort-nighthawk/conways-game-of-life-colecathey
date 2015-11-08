@@ -8,17 +8,13 @@ namespace GameOfLife
 {
     public class World
     {
-        private int[,] _world;
-        private int[,] _nextGeneration;
+        // I went width a fixed size world. Might flip this to dynamic later if I can figure it out
+        public int worldHeight { get; set; } // setting world grid height
+        public int worldWidth { get; set; } // setting world grid width
+        
 
-        //private Task processTask;
+        
 
-        public static int Size { get; set; }
-        public int Generation { get; set; }
-
-        public int BuildWorldSize(int world_size)
-        {
-            _world. = world_size; 
-        }
+        
     }
 }
