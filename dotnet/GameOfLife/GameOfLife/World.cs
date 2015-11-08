@@ -12,6 +12,11 @@ namespace GameOfLife
         public int worldHeight { get; set; } // setting world grid height
         public int worldWidth { get; set; } // setting world grid width
         
+        public void BuildWorld(int height, int width)
+        {
+            worldHeight = height;
+            worldWidth = width;
+        }
 
         
 

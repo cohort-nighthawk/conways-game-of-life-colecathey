@@ -9,10 +9,10 @@ namespace GameOfLife
     public class Cell
     {
         //holder for position of cell
-        public int[,] CellLocation { get; set; }
-        public int Neighbors { get; set; }
-        public bool AliveCell { get; set; }
+        public int[,] CellLocation { get; set; }      
         public bool GiveBirth { get; set; }
+        public bool isAlive { get; set; }
+        public int neighbors { get; set; }
 
 
 
@@ -21,13 +21,13 @@ namespace GameOfLife
         {            
             if (cell_neighbor < 2 || cell_neighbor >= 4)
             {
-                AliveCell = false;
-                return AliveCell;
+                isAlive = false;
+                return isAlive;
             }
             else
             {
-                AliveCell = true;
-                return AliveCell;
+                isAlive = true;
+                return isAlive;
             }
         }
 
