@@ -18,7 +18,7 @@ namespace GameOfLife
         //check to see if cell should live to next generation
         public bool IsAlive(int cell_neighbor)
         {            
-            if (cell_neighbor < 2 || cell_neighbor > 4)
+            if (cell_neighbor < 2 || cell_neighbor >= 4)
             {
                 AliveCell = false;
                 return AliveCell;
@@ -33,7 +33,7 @@ namespace GameOfLife
         //check to see if cell should replicate next generation
         public bool CellReplicate(int cell_neighbor)
         {
-            if (cell_neighbor < 2 || cell_neighbor > 4)
+            if (cell_neighbor < 2 || cell_neighbor >= 4)
             {
                 GiveBirth = false;
                 return GiveBirth;

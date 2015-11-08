@@ -15,5 +15,10 @@ namespace GameOfLife
 
         public static int Size { get; set; }
         public int Generation { get; set; }
+
+        public int BuildWorldSize(int world_size)
+        {
+            _world. = world_size; 
+        }
     }
 }
